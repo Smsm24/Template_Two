@@ -1337,10 +1337,10 @@ ul {
 }
 .contact .content .touch .address p {
   font-size: 22px;
-  padding: 10px 0 50px;
+  padding: 10px 0;
 }
 .contact .content .touch .address address {
-  line-height: 2;
+  line-height: 1.8;
   color: #777;
 }
 /* End Contact */
