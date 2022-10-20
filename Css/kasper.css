@@ -93,6 +93,7 @@ ul {
     top: 100%;
     left: 0;
     width: 100%;
+    background-color: black;
   }
   .header .container .links .toggle:hover + ul li a {
     padding: 15px;
@@ -756,16 +757,33 @@ ul {
   margin: 50px 0;
   justify-content: space-between;
 }
+@media (max-width: 767px) {
+  .big-section .container .testimonials .bar {
+      flex-direction: column;
+      text-align: center;
+      margin-top: -30px;
+    }
+}
 .big-section .container .testimonials .bar img {
   width: 100px;
   height: 100px;
   border-radius: 50%;
+}
+@media (max-width: 767px) {
+  .big-section .container .testimonials .bar img{
+      margin: 0 auto 20px;
+    }
 }
 .big-section .container .testimonials .bar p {
   flex-basis: 70%;
   line-height: 2;
   padding-bottom: 25px;
   position: relative;
+}
+@media (max-width: 767px) {
+  .big-section .container .testimonials .bar p {
+    padding-bottom: 50px;
+    }
 }
 .big-section .container .testimonials .bar p::after {
   content: "";
@@ -862,39 +880,39 @@ ul {
   border: solid 10px black;
   border-color: black transparent transparent transparent;
 }
-.big-section .container .skills .taps .tap:nth-child(2) progress::after {
+.big-section .container .skills .taps .tap:nth-child(2) span::after {
   content: "85%";
   position: absolute;
-  top: -30px;
-  right: 60px;
+  top: -35px;
+  right: -20px;
   padding: 5px;
   border-radius: 2.5px;
   background-color: black;
   color: white;
 }
-.big-section .container .skills .taps .tap:nth-child(2) progress::before {
+.big-section .container .skills .taps .tap:nth-child(2) span::before {
   content: "";
   position: absolute;
-  top: -4px;
-  right: 72px;
+  top: -10px;
+  right: -10px;
   border: solid 10px black;
   border-color: black transparent transparent transparent;
 }
-.big-section .container .skills .taps .tap:nth-child(3) progress::after {
+.big-section .container .skills .taps .tap:nth-child(3) span::after {
   content: "80%";
   position: absolute;
-  top: -30px;
-  right: 85px;
+  top: -35px;
+  right: -20px;
   padding: 5px;
   border-radius: 2.5px;
   background-color: black;
   color: white;
 }
-.big-section .container .skills .taps .tap:nth-child(3) progress::before {
+.big-section .container .skills .taps .tap:nth-child(3) span::before {
   content: "";
   position: absolute;
-  top: -4px;
-  right: 95px;
+  top: -10px;
+  right: -10px;
   border: solid 10px black;
   border-color: black transparent transparent transparent;
 }
